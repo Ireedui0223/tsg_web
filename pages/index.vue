@@ -14,7 +14,7 @@
             depressed
             color="primary"
             class="black--text px-8 mr-8"
-            to="/login"
+            @click="login_user"
           >
             Нэвтрэх
           </v-btn>
@@ -36,6 +36,14 @@
 <script>
 export default {
   name: "IndexPage",
+  data() {
+    return {};
+  },
+  methods: {
+    login_user() {
+      this.$store.commit("set_login_dialog", true);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
