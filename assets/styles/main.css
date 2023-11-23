@@ -1,0 +1,64 @@
+:root {
+  --primary: #000000;
+  --secondary: #6B7586;
+  --secondary-soft: #9EA9B7;
+  --success: #93E5AB;
+
+  --on-success--high: #FFFFFF;
+  --on-success--medium: rgba(255, 255, 255, 0.72);
+  --success-soft: #EFFBF5;
+  --success-soft--high: #12874C;
+  --success-soft--medium: rgba(5, 46, 25, 0.72);
+
+  --error: #CC3435;
+  --error--high: #FFFFFF;
+  --error--medium: rgba(255, 255, 255, 0.72);
+  --error-soft: #FEECEC;
+  --error-soft--high: #691111;
+  --error-soft--medium: rgba(105, 17, 17, 0.72);
+
+  --warning: #E6C20F;
+  --warning--high: #FFFFFF;
+  --warning--medium: rgba(255, 255, 255, 0.72);
+  --warning-soft: #F9EEC8;
+  --warning-soft--high: #804F00;
+  --warning-soft--medium: rgba(128, 79, 0, 0.72);
+
+  --info: #01BAEF;
+  --info--high: #FFFFFF;
+  --info--medium: rgba(255, 255, 255, 0.72);
+  --info-soft: #EDF3FD;
+  --info-soft--high: #041125;
+  --info-soft--medium: rgba(4, 17, 37, 0.72);
+}
+
+
+.v-divider {
+  border-color: #E6E6E6 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  width: 2px;
+  background: #b2abab;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7d7c7c;
+  cursor: pointer;
+}
