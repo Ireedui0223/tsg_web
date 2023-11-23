@@ -119,7 +119,7 @@ export default {
       rating_filter: 5,
       workList: [
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -128,7 +128,7 @@ export default {
           date: "1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -137,7 +137,7 @@ export default {
           date: " 1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -146,7 +146,7 @@ export default {
           date: " 1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -155,7 +155,7 @@ export default {
           date: " 1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -164,7 +164,7 @@ export default {
           date: " 1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -173,7 +173,7 @@ export default {
           date: " 1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -182,7 +182,7 @@ export default {
           date: " 1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",
@@ -191,7 +191,7 @@ export default {
           date: " 1 өдрийн өмнө",
         },
         {
-          image: require("@/assets/images/teso.png"),
+          image: require("~/assets/images/teso.png"),
           workName: "Дизайнер",
           name: "Тэсо грүпп",
           salary: " 2’100’000₮",

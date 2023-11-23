@@ -3,7 +3,7 @@
     <div class="mx-auto mx-90 d-flex align-center justify-space-between mx-80">
       <nuxt-link to="/">
         <v-img
-          :src="require('@/assets/images/logo.png')"
+          :src="require('~/assets/images/logo.png')"
           contain
           max-width="140"
           max-height="80"
@@ -39,7 +39,7 @@
               <v-img
                 width="64"
                 height="64"
-                :src="require('@/assets/images/landing/login_face.png')"
+                :src="require('~/assets/images/landing/login_face.png')"
               />
             </div>
           </template>
