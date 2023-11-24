@@ -31,20 +31,20 @@
               </div>
             </div>
             <div class="box-2">
-              <v-img :src="require('~/assets/images/student/intro-girl.png')" />
+              <v-img :src="require('~/static/images/student/intro-girl.png')" />
               <div class="circle-container">
                 <div class="inlay-circle-2" />
               </div>
             </div>
             <div class="heart-icon">
               <img
-                :src="require('~/assets/images/student/heart.png')"
+                :src="require('~/static/images/student/heart.png')"
                 alt="images"
               />
             </div>
             <div class="like-icon">
               <v-img
-                :src="require('~/assets/images/student/like.png')"
+                :src="require('~/static/images/student/like.png')"
                 alt="images"
               />
             </div>
@@ -67,7 +67,7 @@
 
       <v-row>
         <v-col cols="12" md="6" xl="6" sm="6">
-          <v-img :src="require('~/assets/images/landing/career.png')"></v-img>
+          <v-img :src="require('~/static/images/landing/career.png')"></v-img>
         </v-col>
         <v-col cols="12" md="6" xl="6" sm="6">
           <h3 class="landing-large--text">Бид юу хийдэг вэ</h3>

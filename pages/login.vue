@@ -11,7 +11,7 @@
           <LoginForm />
         </v-col>
         <v-col cols="6" class="ma-auto">
-          <v-img :src="require('~/assets/images/landing/login_face.png')" />
+          <v-img :src="require('~/static/images/landing/login_face.png')" />
         </v-col>
       </v-row>
     </v-sheet>

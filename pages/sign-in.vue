@@ -8,7 +8,7 @@
     >
       <v-row class="mx-80 mx-auto">
         <v-col cols="5" class="ma-auto">
-          <v-img :src="require('~/assets/images/landing/sign_in.png')" />
+          <v-img :src="require('~/static/images/landing/sign_in.png')" />
         </v-col>
         <v-col cols="7">
           <h3 class="h3--text font-weight-bold text-center mb-4">
