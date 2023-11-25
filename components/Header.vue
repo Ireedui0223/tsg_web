@@ -81,6 +81,13 @@ export default {
 <style lang="scss" scoped>
 .mx-80 {
   max-width: 80%;
+  margin: auto;
+}
+@media (min-width: 1440px) {
+  .mx-80 {
+    max-width: 1600px !important;
+    margin: auto;
+  }
 }
 .text-input {
   max-width: 500px !important;

@@ -2,8 +2,8 @@
   <div>
     <v-sheet color="primary" height="">
       <div class="mx-80 py-10">
-        <div class="content-container">
-          <div class="student-content">
+        <v-row class="content-container">
+          <v-col cols="12" md="7" lg="7" xl="7" class="student-content">
             <h3 class="white--text landing-large--text content-title">
               Find the job that fits your life
             </h3>
@@ -20,36 +20,36 @@
               <span class="white--text mr-1">Дадлагжих хөтөлбөр</span>
               <span class="white--text mr-1">Түр ажил</span>
             </div>
-          </div>
-          <div class="image-container">
-            <div class="box-1">
-              <v-img
-                src="https://a0.anyrgb.com/pngimg/956/390/mongolian-pattern-happy-baby-mongols-bear-doll-wedding-doll-doll-cute-baby-doll-mongolian-barbie-doll-mongolia.png"
-              />
-              <div class="circle-container">
-                <div class="inlay-circle-1" />
+          </v-col>
+          <v-col cols="12" md="5" lg="5" xl="5" class="d-flex justify-end">
+            <div class="image-container">
+              <div class="box-1">
+                <v-img :src="require('~/static/images/landing/intro_1.png')" />
+                <div class="circle-container">
+                  <div class="inlay-circle-1" />
+                </div>
+              </div>
+              <div class="box-2">
+                <v-img :src="require('~/static/images/landing/intro_2.png')" />
+                <div class="circle-container">
+                  <div class="inlay-circle-2" />
+                </div>
+              </div>
+              <div class="heart-icon">
+                <img
+                  :src="require('~/static/images/student/heart.png')"
+                  alt="images"
+                />
+              </div>
+              <div class="like-icon">
+                <v-img
+                  :src="require('~/static/images/student/like.png')"
+                  alt="images"
+                />
               </div>
             </div>
-            <div class="box-2">
-              <v-img :src="require('~/static/images/student/intro-girl.png')" />
-              <div class="circle-container">
-                <div class="inlay-circle-2" />
-              </div>
-            </div>
-            <div class="heart-icon">
-              <img
-                :src="require('~/static/images/student/heart.png')"
-                alt="images"
-              />
-            </div>
-            <div class="like-icon">
-              <v-img
-                :src="require('~/static/images/student/like.png')"
-                alt="images"
-              />
-            </div>
-          </div>
-        </div>
+          </v-col>
+        </v-row>
       </div>
     </v-sheet>
 
@@ -65,13 +65,25 @@
         </v-btn>
       </div>
 
-      <v-row>
+      <v-row class="mt-4">
         <v-col cols="12" md="6" xl="6" sm="6">
           <v-img :src="require('~/static/images/landing/career.png')"></v-img>
         </v-col>
         <v-col cols="12" md="6" xl="6" sm="6">
           <h3 class="landing-large--text">Бид юу хийдэг вэ</h3>
+          <p>Гол үйл ажиллагаа</p>
           <h3 class="landing-large--text primary--text">Ажил зуулчлал</h3>
+          <p>Тус ажлын танилцуулга</p>
+        </v-col>
+        <v-col cols="12" md="6" xl="6" sm="6">
+            <v-row>
+              <v-col cols="3" xl="3" md="3" sm="6" >
+                <h5></h5>
+              </v-col>
+              <v-col cols="3" xl="3" md="3" sm="6" ></v-col>
+              <v-col cols="3" xl="3" md="3" sm="6" ></v-col>
+              <v-col cols="3" xl="3" md="3" sm="6" ></v-col>
+            </v-row>          
         </v-col>
       </v-row>
     </div>
@@ -202,11 +214,13 @@ export default {
   max-width: 80%;
   margin: auto;
 }
+@media (min-width: 1440px) {
+  .mx-80 {
+    max-width: 1600px !important;
+    margin: auto;
+  }
+}
 .content-container {
-  display: flex;
-  flex: wrap;
-  width: 80%;
-  margin: auto;
   .student-content {
     width: 67%;
     flex: 0 0 auto;
@@ -230,28 +244,28 @@ export default {
     position: relative;
     align-content: center;
     height: 340px;
-    max-width: 290px;
-    width: 33%;
+    width: 60%;
     flex: 0 0 auto;
     display: flex;
     margin: 30px;
     .box-1 {
       width: 60%;
       position: relative;
-      margin-left: -10.4%;
-      margin-top: -14%;
+      margin-top: -10%;
       margin-right: -6%;
       flex-grow: 1;
       div {
         width: 160px;
+        height: 100%;
+        max-height: 300px;
         margin-right: 32px;
         border-radius: 120px;
         position: absolute;
       }
       .circle-container {
         animation: scaler 4s infinite ease-in-out alternate;
-        top: -10px;
-        right: 23px;
+        top: -20px;
+        right: 50px;
         position: absolute;
         .inlay-circle-1 {
           width: 180px;
@@ -266,21 +280,20 @@ export default {
     .box-2 {
       width: 40%;
       position: relative;
-      margin-left: 0%;
       margin-top: 19.4%;
-      margin-right: -11%;
       flex-grow: 1;
-      background: rgb(232, 231, 231, 0.5);
       border-radius: 120px;
       div {
         position: absolute;
         height: 100%;
-        width: auto;
+        width: 160px;
+        border-radius: 120px;
+        position: absolute;
       }
       .circle-container {
         animation: scaler 4s infinite ease-in-out alternate;
-        bottom: -120px;
-        right: -4px;
+        bottom: -100px;
+        left: -2px;
         position: absolute;
         .inlay-circle-2 {
           width: 180px;
@@ -301,7 +314,7 @@ export default {
     .like-icon {
       position: absolute;
       top: 10.4%;
-      left: 100%;
+      right: -40px;
       z-index: 10;
       animation: like-bumb 4s infinite ease-in-out alternate;
     }
