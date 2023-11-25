@@ -1,6 +1,6 @@
 <template>
-  <header class="white py-2 px-6 mb-10">
-    <div class="mx-auto mx-90 d-flex align-center justify-space-between mx-80">
+  <header class="">
+    <div class="mx-auto d-flex align-center justify-space-between mx-80">
       <nuxt-link to="/">
         <v-img
           :src="require('~/static/images/logo.png')"
@@ -10,6 +10,7 @@
         />
       </nuxt-link>
       <v-text-field
+        v-if="$vuetify.breakpoint.smAndUp"
         v-model.trim="search_input"
         filled
         dense
@@ -83,7 +84,7 @@ export default {
   max-width: 80%;
   margin: auto;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   .mx-80 {
     max-width: 1600px !important;
     margin: auto;

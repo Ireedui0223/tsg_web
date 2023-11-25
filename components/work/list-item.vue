@@ -2,7 +2,7 @@
   <div v-if="workDetail">
     <nuxt-link :to="`/work/${workDetail.id}`" class="text-decoration-none">
       <v-card class="px-4 mb-6" elevation="1" rounded="xl">
-        <v-card-title>
+        <v-card-title class="overflow-x-hidden">
           <v-list-item class="px-0">
             <v-list-item-avatar>
               <v-img :src="workDetail.image" />

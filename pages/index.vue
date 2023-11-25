@@ -21,7 +21,14 @@
               <span class="white--text mr-1">Түр ажил</span>
             </div>
           </v-col>
-          <v-col cols="12" md="5" lg="5" xl="5" class="d-flex justify-end">
+          <v-col
+            v-if="$vuetify.breakpoint.smAndUp"
+            cols="12"
+            md="5"
+            lg="5"
+            xl="5"
+            class="d-flex justify-end"
+          >
             <div class="image-container">
               <div class="box-1">
                 <v-img :src="require('~/static/images/landing/intro_1.png')" />
@@ -76,14 +83,14 @@
           <p>Тус ажлын танилцуулга</p>
         </v-col>
         <v-col cols="12" md="6" xl="6" sm="6">
-            <v-row>
-              <v-col cols="3" xl="3" md="3" sm="6" >
-                <h5></h5>
-              </v-col>
-              <v-col cols="3" xl="3" md="3" sm="6" ></v-col>
-              <v-col cols="3" xl="3" md="3" sm="6" ></v-col>
-              <v-col cols="3" xl="3" md="3" sm="6" ></v-col>
-            </v-row>          
+          <v-row>
+            <v-col cols="3" xl="3" md="3" sm="6">
+              <h5></h5>
+            </v-col>
+            <v-col cols="3" xl="3" md="3" sm="6"></v-col>
+            <v-col cols="3" xl="3" md="3" sm="6"></v-col>
+            <v-col cols="3" xl="3" md="3" sm="6"></v-col>
+          </v-row>
         </v-col>
       </v-row>
     </div>
@@ -214,7 +221,7 @@ export default {
   max-width: 80%;
   margin: auto;
 }
-@media (min-width: 1440px) {
+@media (min-width: 16000px) {
   .mx-80 {
     max-width: 1600px !important;
     margin: auto;
@@ -222,7 +229,6 @@ export default {
 }
 .content-container {
   .student-content {
-    width: 67%;
     flex: 0 0 auto;
     margin: 80px 0 80px 0;
     .content-title {
