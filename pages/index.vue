@@ -5,13 +5,11 @@
         <v-row class="content-container">
           <v-col cols="12" md="7" lg="7" xl="7" class="student-content">
             <h3 class="white--text landing-large--text content-title">
-              Find the job that fits your life
+              Таньд хамгийн тохиромжтой ажлын байр
             </h3>
             <p class="white--text mt-4">
-              Resume-Library is a true performance-based job board. Enjoy custom
-              hiring products and access to up to 10,000 new resume
-              registrations daily, with no subscriptions or user licences.
-              (Тайлбар мэдээлэл)
+              Монглын тэргүүлэгч байгууллагуудтай холбогдож% хүсэлдээ тулгуурлан
+              ажил мэргэжлээ олоорой
             </p>
             <div class="">
               <span class="white--text mr-1">Бүтэн цаг</span>
@@ -61,8 +59,8 @@
     </v-sheet>
 
     <div class="mx-80 mt-6">
-      <h3 class="landing-large--text text-center">Ажилууд</h3>
-      <p class="mt-2 h4--text text-center">Онцгой ажилууд</p>
+      <h3 class="landing-large--text text-center">Ажлууд</h3>
+      <p class="mt-2 h4--text text-center">Онцгой ажлууд</p>
       <div v-for="(work, index) in works" :key="index">
         <WorkDetail :workDetail="work" />
       </div>
@@ -78,8 +76,8 @@
         </v-col>
         <v-col cols="12" md="6" xl="6" sm="6">
           <h3 class="landing-large--text">Бид юу хийдэг вэ</h3>
-          <p>Гол үйл ажиллагаа</p>
-          <h3 class="landing-large--text primary--text">Ажил зуулчлал</h3>
+          <p>Ажил олгогч болон оюутан залуусыг холбох</p>
+          <h3 class="landing-large--text primary--text">Ажил зуучлал</h3>
           <p>Тус ажлын танилцуулга</p>
         </v-col>
         <v-col cols="12" md="6" xl="6" sm="6">
